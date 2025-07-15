@@ -58,7 +58,7 @@ class QueryCorrector:
         res = {}
         for node in nodes:
             parts = node.split(":")
-            if parts == "":
+            if parts[0] == "":
                 continue
             variable = parts[0]
             if variable not in res:
